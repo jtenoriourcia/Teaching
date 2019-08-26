@@ -1,7 +1,6 @@
 % Programa que grafica la FIR, FAS y FAP de un AR(p)
 % Elaborado por: Juan Tenorio 
 % Referencia: Hamilton J. (1994) Time Series Analysis pp. 155
-% Curso: Series de Tiempo
 
 clc; clear;
 
@@ -33,7 +32,7 @@ F = [ phi(:)' ; ...
 % Valores propios
 L = eig(F);
 
-% Obtencion de los coeficientes c (Proposición 1.2)
+% Obtencion de los coeficientes c (ProposiciÃ³n 1.2)
 p = length(L);
 c = zeros(p,1);
 for ii=1:p
